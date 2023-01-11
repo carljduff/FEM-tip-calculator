@@ -1,13 +1,15 @@
 import React from "react";
 import "../css/bill.css";
-
+import dollar from "../images/icon-dollar.svg";
+import person from "../images/icon-person.svg";
 const Bill = () => {
     let tips = [5, 10, 15, 25, 50]
     return (
         <div className="bill-wrapper">
             <div>
                 <p className="bill-title">Bill</p>
-                <input className="bill-input" placeholder="$"></input>
+                <img className="bill-dollar" src={dollar} alt="dollar bill sign"/>
+                <input className="bill-input"></input>
             </div>
 
             <div>
@@ -24,7 +26,9 @@ const Bill = () => {
 
             <div>
                 <p className="bill-title">Number of People</p>
-                <input className="bill-input" placeholder="$"></input>
+                <img className="bill-dollar" src={person} alt="dollar bill sign"/>
+
+                <input className="bill-input"></input>
             </div>
         </div>
     );

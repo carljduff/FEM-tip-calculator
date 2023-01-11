@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Bill from './components/Bill';
-
+import Reset from "./components/Reset";
 function App() {
   const amounts = {
     bill: 0,
@@ -9,6 +9,8 @@ function App() {
   }
 
   const [bill, setBill] = useState(amounts);
+  const [tip, setTip] = useState(0);
+  const [total, setTotal] = useState(0);
   
 
 
@@ -16,6 +18,7 @@ function App() {
   return (
     <div className="App">
     <Bill/>
+    <Reset tip={tip} total={total}/>
     </div>
   );
 }
