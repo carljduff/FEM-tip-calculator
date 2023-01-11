@@ -1,0 +1,26 @@
+.bill-title {
+    margin: 0;
+}
+
+.bill-input {
+    text-align: right;
+}
+
+.bill-input::placeholder {
+    text-align: left;
+}
+
+.tip-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    gap: 5px;
+    padding: 0;
+}
+
+.tip-button {
+    width: 100px;
+    height: 50px;
+}
