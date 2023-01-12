@@ -1,15 +1,26 @@
 import React from "react";
 import "../css/bill.css";
-const Reset = ({tip, total}) => {
+const Reset = ({perPerson, total, setPerPerson, setPeople, setBill, setTip, setTotal, setInput}) => {
+
+    const resetHandler = () => {
+        setPerPerson(0);
+        setPeople("");
+        setBill("");
+        setTip(0);
+        setTotal(0);
+        setInput("");
+    }
+
     return(
         <div className="reset-wrapper">
             <div className="tip-amount">
                 <div>
+                {/* tip = bill * tip */}
                     <p className="tip">Tip Amount</p>
                     <p className="tip">/ person</p>
                 </div>
                 <div>
-                    ${tip}
+                    ${perPerson}
                 </div>
 
             </div>
@@ -24,6 +35,8 @@ const Reset = ({tip, total}) => {
                 </div>
 
             </div>
+
+            <button onClick={resetHandler} className="reset-button">Reset</button>
 
 
         </div>
