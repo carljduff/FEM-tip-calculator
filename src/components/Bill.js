@@ -39,13 +39,13 @@ const Bill = ({setBill, setTip, setPeople, bill, people, input}) => {
                         <button onClick={buttonHandler} key={index} className="tip-button">{tip}%</button>
                     )
                 })}
-                <input onChange={buttonHandler} placeholder="%" className="tip-button"></input>
+                <input onChange={buttonHandler} placeholder="Custom" className="tip-button"></input>
                 </div>
             </div>
 
             <div>
                 <p className="bill-title">Number of People</p>
-                <img className="bill-dollar" src={person} alt="dollar bill sign"/>
+                <img className="bill-people" src={person} alt="dollar bill sign"/>
 
                 <input value={people} onChange={peopleHandler} className="bill-input"></input>
             </div>

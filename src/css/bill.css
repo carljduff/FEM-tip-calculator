@@ -8,12 +8,34 @@
     --white: hsl(0, 0%, 100%);
 }
 
+body {
+    background-color: var(--lightgraycyan);
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--lightcyan);
+}
+
+input::placeholder {
+    color: var(--white);
+}
+
+/* input:focus {
+    border: 1px solid var(--darkgraycyan);
+} */
+
 
 .reset-wrapper {
     display: flex;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    background-color: var(--darkcyan);
 
 }
 .bill-wrapper {
@@ -27,19 +49,34 @@
 }
 .bill-title {
     margin: 0;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+.tip-title {
+    margin-top: 10px;
 }
 
 .bill-input {
     text-align: right;
+    width: 300px;
+    height: 35px;
+    margin-left: -50px; 
    
-    
 }
 
 .bill-wrapper img {
     position: absolute;
 }
+
 .bill-dollar {
-    padding: 5px;
+    margin-left: -45px;
+    margin-top: 8px;
+}
+
+.bill-people {
+    margin-left: -45px;
+    margin-top: 11px;
 }
 
 .tip-buttons {
@@ -48,17 +85,27 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    gap: 5px;
+    gap: 10px;
     margin-left: -43px;
 }
 
-.tip-button {
+.tip-button, .reset-button {
     width: 100px;
     height: 50px;
+    border-radius: 15px;
+    background-color: var(--darkcyan);
+    color: var(--white);
+    border: none;
+    text-align: center;
 }
 
 .tip {
     margin: 0;
+    color: var(--lightgraycyan);
+}
+
+h1 {
+    color: var(--strongcyan);
 }
 
 .tip-amount {
@@ -72,7 +119,11 @@
 .app {
     display: flex;
     flex-flow: row;
-    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    border-radius: 20px;
+    width: 800px;
+    padding: 20px;
+    background-color: var(--white);
+    margin: 200px auto;
 }
+

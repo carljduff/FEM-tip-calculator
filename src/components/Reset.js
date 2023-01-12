@@ -20,7 +20,7 @@ const Reset = ({perPerson, total, setPerPerson, setPeople, setBill, setTip, setT
                     <p className="tip">/ person</p>
                 </div>
                 <div>
-                    ${perPerson}
+                    <h1>${perPerson}</h1>
                 </div>
 
             </div>
@@ -31,7 +31,7 @@ const Reset = ({perPerson, total, setPerPerson, setPeople, setBill, setTip, setT
                     <p className="tip">/ person</p>
                 </div>
                 <div>
-                    ${total}
+                    <h1>${total}</h1>
                 </div>
 
             </div>
