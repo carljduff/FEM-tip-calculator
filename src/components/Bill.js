@@ -25,29 +25,29 @@ const Bill = ({setBill, setTip, setPeople, bill, people, input}) => {
 
     return (
         <div className="bill-wrapper">
-            <div>
-                <p className="bill-title">Bill</p>
+            <div className="bill-top-wrapper">
+                <p className="bill-title-top">Bill</p>
                 <img className="bill-dollar" src={dollar} alt="dollar bill sign"/>
-                <input value={bill} onChange={billHandler} className="bill-input"></input>
+                <input type="number" value={bill} onChange={billHandler} className="bill-input top"></input>
             </div>
 
-            <div>
+            <div className="select-wrapper">
                 <p className="tip-title">Select Tip %</p>
                 <div className="tip-buttons">
                 {tips.map((tip, index) => {
                     return (
-                        <button onClick={buttonHandler} key={index} className="tip-button">{tip}%</button>
+                        <button onClick={buttonHandler} key={index} className="tip-button"><span className="btn">{tip}%</span></button>
                     )
                 })}
-                <input onChange={buttonHandler} placeholder="Custom" className="tip-button"></input>
+                <input type="number" onChange={buttonHandler} placeholder="Custom" className="tip-button"></input>
                 </div>
             </div>
 
-            <div>
+            <div className="num-people-wrapper">
                 <p className="bill-title">Number of People</p>
                 <img className="bill-people" src={person} alt="dollar bill sign"/>
 
-                <input value={people} onChange={peopleHandler} className="bill-input"></input>
+                <input value={people} type="number" onChange={peopleHandler} className="bill-input bottom"></input>
             </div>
         </div>
     );

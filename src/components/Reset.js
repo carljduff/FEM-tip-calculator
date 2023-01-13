@@ -14,24 +14,24 @@ const Reset = ({perPerson, total, setPerPerson, setPeople, setBill, setTip, setT
     return(
         <div className="reset-wrapper">
             <div className="tip-amount">
-                <div>
+                <div className="tip-person-wrapper">
                 {/* tip = bill * tip */}
-                    <p className="tip">Tip Amount</p>
-                    <p className="tip">/ person</p>
+                    <p className="tip tip-amount-label">Tip Amount</p>
+                    <p className="tip person-label">/ person</p>
                 </div>
                 <div>
-                    <h1>${perPerson}</h1>
+                    <h1 className="total-label">${perPerson}</h1>
                 </div>
 
             </div>
 
-            <div className="tip-amount">
-                <div>
-                    <p className="tip">Total</p>
-                    <p className="tip">/ person</p>
+            <div className="total-amount-wrap">
+                <div className="total-person">
+                    <p className="tip total-amount-label">Total</p>
+                    <p className="tip person-label">/ person</p>
                 </div>
-                <div>
-                    <h1>${total}</h1>
+                <div className="total-amount">
+                    <h1 className="total-label">${total}</h1>
                 </div>
 
             </div>
